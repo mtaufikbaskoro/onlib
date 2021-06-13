@@ -22,7 +22,7 @@ export default function Card(props) {
                 </h1>
             </div>
             <div style={cardFooterSize} className="bg-light flex justify-center items-center rounded-b-lg">
-                <Button isDark hasShadow>Detail</Button>
+                <Button isDark hasShadow href="detail" idData={detail.id}>Detail</Button>
             </div>
         </div>
     )

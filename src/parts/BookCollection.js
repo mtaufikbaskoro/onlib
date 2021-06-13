@@ -11,7 +11,6 @@ export default function BookCollection (props) {
         <div className={className.join(" ")}>
             {
                 books.map((book, index) => {
-                    console.log(book)
                     return(
                         <Card key={book.id} detail={book}></Card>
                     )
