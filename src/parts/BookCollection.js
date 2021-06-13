@@ -1,11 +1,14 @@
 import React from 'react'
+import propTypes from 'prop-types'
 
 import Card from 'components/Card'
 
 export default function BookCollection (props) {
     const books = props.dataBooks
+    const className = ["grid", "grid-flow-row", "grid-cols-3", "grid-rows-3", "pt-4"]
+    className.push(props.gap)
     return(
-        <div className="grid grid-flow-row grid-cols-3 grid-rows-3 gap-y-10 pt-4">
+        <div className={className.join(" ")}>
             {
                 books.map((book, index) => {
                     console.log(book)
@@ -16,4 +19,8 @@ export default function BookCollection (props) {
             }
         </div>
     )
+}
+
+BookCollection.propTypes = {
+    gap: propTypes.string
 }

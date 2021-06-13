@@ -29,7 +29,7 @@ export default function BukuBaru() {
             </Section>
             <Section className="flex flex-col ml-40">
                 <div><h1 className="text-white font-bold text-2xl">Koleksi Baru</h1></div>
-                <BookCollection dataBooks={dataBooks} />
+                <BookCollection gap="gap-y-10" dataBooks={dataBooks} />
             </Section>
             <Footer></Footer>
         </div>

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 import SearchIcon from 'assets/images/search-icon.svg'
 
-export default function SearchBar() {
+export default function SearchBar(props) {
     const [show, setShow] = useState(true);
     const imageClass = ["absolute", "mr-24"];
     if(!show){
