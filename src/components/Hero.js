@@ -22,7 +22,7 @@ export default function Hero(props) {
                         <Badge className="mx-1">Sejarah</Badge>
                     </div>
                 </div>
-                <Button className="my-2" isDark>Detail</Button>
+                <Button  className="my-2" isDark>Detail</Button>
             </div>
         </div>
     )
